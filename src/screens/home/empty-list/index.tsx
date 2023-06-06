@@ -5,7 +5,7 @@ import { styles } from './styles';
 export default function EmptyList() {
   return (
     <View style={styles.container}>
-      <Image source={require('../../../assets/note.png')} />
+      <Image source={require('../../../../assets/note.png')} />
 
       <View>
         <Text style={styles.message}>You don't have any tasks registered yet</Text>
