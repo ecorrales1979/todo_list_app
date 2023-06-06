@@ -10,5 +10,11 @@ export const styles = StyleSheet.create({
   contentContainer: {
     flex: 1,
     backgroundColor: palette.gray6,
+    paddingLeft: 24,
+    paddingRight: 24,
+  },
+  content: {
+    position: 'relative',
+    top: -27,
   },
 });
