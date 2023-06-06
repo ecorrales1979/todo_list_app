@@ -16,10 +16,15 @@ export const styles = StyleSheet.create({
     color: palette.gray1,
     fontSize: 16,
     backgroundColor: palette.gray5,
-    borderColor: palette.gray7,
     borderWidth: 1,
     borderStyle: 'solid',
     borderRadius: 8,
     padding: 16,
+  },
+  defaultInput: {
+    borderColor: palette.gray7,
+  },
+  focusedInput: {
+    borderColor: palette.purpleDark,
   },
 });
