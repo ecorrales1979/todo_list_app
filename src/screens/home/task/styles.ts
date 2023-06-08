@@ -24,6 +24,8 @@ export const styles = StyleSheet.create({
     borderStyle: 'solid',
   },
   checkboxChecked: {
+    justifyContent: 'center',
+    alignItems: 'center',
     width: 16,
     height: 16,
     borderRadius: 999,
