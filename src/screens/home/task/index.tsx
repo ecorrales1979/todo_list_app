@@ -1,10 +1,11 @@
+import { useMemo } from 'react';
 import { Pressable, Text, View } from 'react-native';
 
 import { styles } from './styles';
 import { useToDo } from '../context';
 import ButtonDelete from '@/components/button-delete';
-import { ToDo } from '@/props';
 import { ToDoStatusEnum } from '@/enums/ToDoStatusEnum';
+import { ToDo } from '@/props';
 
 interface Props {
   data: ToDo;
@@ -18,13 +19,17 @@ export default function Task({ data }: Props) {
     toggleToDo(data.id)
   }
 
+  const isFinished = useMemo(() => {
+    return data.status === ToDoStatusEnum.FINISHED
+  }, [data.status]);
+
   return (
     <View style={styles.container}>
       <Pressable
         onPress={handleButtonPress}
-        style={data.status === ToDoStatusEnum.PENDING ? styles.checkboxDefault : styles.checkboxChecked}
+        style={isFinished ? styles.checkboxChecked : styles.checkboxDefault}
       ></Pressable>
-      <Text style={styles.task}>{data.name}</Text>
+      <Text style={isFinished ? styles.taskFinished : styles.taskDefault}>{data.name}</Text>
       <ButtonDelete onPress={() => removeToDo(data.id)} />
     </View>
   )

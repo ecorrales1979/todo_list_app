@@ -32,8 +32,14 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderStyle: 'solid',
   },
-  task: {
+  taskDefault: {
     flex: 1,
     color: palette.gray1,
+  },
+  taskFinished: {
+    flex: 1,
+    color: palette.gray3,
+    textDecorationStyle: 'solid',
+    textDecorationLine: 'line-through',
   },
 });
