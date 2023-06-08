@@ -11,4 +11,5 @@ export const palette: Record<string, string> = {
   gray6: '#1A1A1A',
   gray7: '#0D0D0D',
   danger: '#E25858',
+  background: '#1E1E1E',
 };
