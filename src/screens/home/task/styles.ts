@@ -15,11 +15,20 @@ export const styles = StyleSheet.create({
     paddingRight: 15,
     backgroundColor: palette.gray5,
   },
-  defaultCheckbox: {
+  checkboxDefault: {
     width: 16,
     height: 16,
     borderRadius: 999,
     borderColor: palette.blue,
+    borderWidth: 1,
+    borderStyle: 'solid',
+  },
+  checkboxChecked: {
+    width: 16,
+    height: 16,
+    borderRadius: 999,
+    backgroundColor: palette.purpleDark,
+    borderColor: palette.purpleDark,
     borderWidth: 1,
     borderStyle: 'solid',
   },

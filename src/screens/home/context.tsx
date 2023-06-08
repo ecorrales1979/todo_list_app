@@ -6,6 +6,7 @@ interface ToDoContextData {
   todos: ToDo[];
   addToDo: (name: string) => void;
   removeToDo: (id: string) => void;
+  toggleToDo: (id: string) => void;
 }
 
 const ToDoContext = createContext<ToDoContextData | null>(null);
@@ -22,8 +23,22 @@ export const ToDoProvider = ({ children }: PropsWithChildren) => {
     setTodos(oldState => oldState.filter(item => item.id !== id));
   }
 
+
+  const toggleToDo = (id: string) => {
+    setTodos(oldState => oldState.map(item => {
+      let status = item.status;
+      
+      if (item.id === id) {
+        status = item.status === ToDoStatusEnum.FINISHED
+          ? ToDoStatusEnum.PENDING
+          : ToDoStatusEnum.FINISHED;
+      }
+      
+      return { ...item, status }}))
+  }
+
   return (
-    <ToDoContext.Provider value={{ todos, addToDo, removeToDo }}>
+    <ToDoContext.Provider value={{ todos, addToDo, removeToDo, toggleToDo }}>
       {children}
     </ToDoContext.Provider>
   )
