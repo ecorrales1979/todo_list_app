@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 8,
+    gap: 12,
     paddingTop: 24,
     paddingBottom: 70,
   },
@@ -17,12 +17,12 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   textFirst: {
-    fontSize: 26,
+    fontSize: 32,
     color: palette.blue,
     fontFamily: 'InterBold',
   },
   textLast: {
-    fontSize: 26,
+    fontSize: 32,
     color: palette.purpleDark,
     fontFamily: 'InterBold',
   },
