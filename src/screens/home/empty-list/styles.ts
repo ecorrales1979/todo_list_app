@@ -15,14 +15,15 @@ export const styles = StyleSheet.create({
   message: {
     color: palette.gray3,
     fontSize: 14,
-    fontWeight: '700',
     lineHeight: 20,
     textAlign: 'center',
+    fontFamily: 'InterBold',
   },
   submessage: {
     color: palette.gray3,
     fontSize: 14,
     lineHeight: 20,
     textAlign: 'center',
+    fontFamily: 'InterRegular',
   },
 });

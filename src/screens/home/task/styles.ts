@@ -38,10 +38,12 @@ export const styles = StyleSheet.create({
   taskDefault: {
     flex: 1,
     color: palette.gray1,
+    fontFamily: 'InterRegular',
   },
   taskFinished: {
     flex: 1,
     color: palette.gray3,
+    fontFamily: 'InterRegular',
     textDecorationStyle: 'solid',
     textDecorationLine: 'line-through',
   },

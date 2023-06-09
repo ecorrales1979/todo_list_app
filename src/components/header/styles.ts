@@ -18,12 +18,12 @@ export const styles = StyleSheet.create({
   },
   textFirst: {
     fontSize: 26,
-    fontWeight: '700',
     color: palette.blue,
+    fontFamily: 'InterBold',
   },
   textLast: {
     fontSize: 26,
-    fontWeight: '700',
     color: palette.purpleDark,
+    fontFamily: 'InterBold',
   },
 });

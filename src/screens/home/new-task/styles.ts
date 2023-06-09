@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
     height: 54,
     color: palette.gray1,
     fontSize: 16,
+    fontFamily: 'InterRegular',
     backgroundColor: palette.gray5,
     borderWidth: 1,
     borderStyle: 'solid',

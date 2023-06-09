@@ -19,13 +19,13 @@ export const styles = StyleSheet.create({
   },
   createdText: {
     color: palette.blue,
-    fontWeight: '700',
+    fontFamily: 'InterBold',
     fontSize: 14,
     lineHeight: 17,
   },
   finishedText: {
     color: palette.purple,
-    fontWeight: '700',
+    fontFamily: 'InterBold',
     fontSize: 14,
     lineHeight: 17,
   },
@@ -39,7 +39,7 @@ export const styles = StyleSheet.create({
     marginRight: 6,
     color: palette.gray2,
     fontSize: 12,
-    fontWeight: '700',
+    fontFamily: 'InterBold',
     lineHeight: 15,
   },
 });
